@@ -2,7 +2,7 @@
 
 import { useChat } from 'ai/react'
 
-export const Home = () => {
+export default function Home(){
   const { messages, input, handleInputChange, handleSubmit } = useChat()
   return (
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
@@ -27,4 +27,3 @@ export const Home = () => {
   )
 }
 
-export default Home;
